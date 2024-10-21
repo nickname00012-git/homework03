@@ -159,6 +159,83 @@ public class Main {
         System.out.println();
         System.out.println();
 
+        // Task 6
+
+        taskN += 1;
+
+        System.out.println("Task " + taskN + ".");
+        System.out.println("=======");
+        System.out.println();
+
+        short massOfBananas = 5 * 80;
+        short massOfMilk = 200 / 100 * 105;
+        short massOfIceCream = 2 * 100;
+        short massOfEggs = 4 * 70;
+        short breakfastMassInGrams;
+        float breakfastMassInKilograms;
+
+        breakfastMassInGrams = (short) (massOfBananas + massOfMilk + massOfIceCream + massOfEggs);
+        breakfastMassInKilograms = (float) (breakfastMassInGrams) / 1000;
+        System.out.println("Вес завтрака спортсмена в граммах:      " + breakfastMassInGrams + " г");
+        System.out.println("Вес завтрака спортсмена в килограммах:  " + breakfastMassInKilograms + " кг");
+
+        System.out.println();
+        System.out.println();
+
+        // Task 7
+
+        taskN += 1;
+
+        System.out.println("Task " + taskN + ".");
+        System.out.println("=======");
+        System.out.println();
+
+        short massToLossPerDay = 250;
+        short massToLossInKg = 7;
+        short daysToMassLoss1;
+        short daysToMassLoss2;
+
+        daysToMassLoss1 = (short) (massToLossInKg * 1000 / massToLossPerDay);
+        System.out.println("Нужно дней для снижения веса на 7 кг (по " + massToLossPerDay + " гр в день):   " + daysToMassLoss1);
+
+        massToLossPerDay = 500;
+        daysToMassLoss2 = (short) (massToLossInKg * 1000 / massToLossPerDay);
+        System.out.println("Нужно дней для снижения веса на 7 кг (по " + massToLossPerDay + " гр в день):   " + daysToMassLoss2);
+
+        massToLossPerDay = (short) ((500 + 250) / 2);
+        daysToMassLoss2 = (short) ((daysToMassLoss1 + daysToMassLoss2) / 2);
+        System.out.println("В среднем нужнно дней для снижения веса на 7 кг:   " + daysToMassLoss2);
+
+        System.out.println();
+        System.out.println();
+
+        // Task 8
+
+        taskN += 1;
+
+        System.out.println("Task " + taskN + ".");
+        System.out.println("=======");
+        System.out.println();
+
+        float zpMashaCur = 67760f;
+        float zpDenisCur = 83690f;
+        float zpKristinaCur = 76230f;
+
+        float zpMashaNew = zpMashaCur * 1.1f;
+        float zpDenisNew = zpDenisCur * 1.1f;
+        float zpKristinaNew = zpKristinaCur * 1.1f;
+
+        float zpMashaInc = zpMashaNew * 12f - zpMashaCur * 12f;
+        float zpDenisInc = zpDenisNew * 12f - zpDenisCur * 12f;
+        float zpKristinaInc = zpKristinaNew * 12f - zpKristinaCur * 12f;
+
+        System.out.println("Маша теперь получает " + zpMashaNew + " рублей. Годовой доход вырос на " + zpMashaInc + " рублей.");
+        System.out.println("Денис теперь получает " + zpDenisNew + " рублей. Годовой доход вырос на " + zpDenisInc + " рублей.");
+        System.out.println("Кристина теперь получает " + zpKristinaNew + " рублей. Годовой доход вырос на " + zpKristinaInc + " рублей.");
+
+        System.out.println();
+        System.out.println();
+
 
     }
 }
