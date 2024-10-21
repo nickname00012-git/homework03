@@ -104,6 +104,61 @@ public class Main {
         System.out.println();
 
 
+        // Task 4
+
+        taskN += 1;
+
+        System.out.println("Task " + taskN + ".");
+        System.out.println("=======");
+        System.out.println();
+
+        byte bottlesPerMinute = 16/2;
+        short minutesPerDay = 60*24;
+        int bottlesProduced;
+
+        bottlesProduced = bottlesPerMinute * 20;
+        System.out.println("За 20 минут машина произвела " + bottlesProduced + " штук бутылок.");
+
+        bottlesProduced = bottlesPerMinute * minutesPerDay * 1;
+        System.out.println("За 1 сутки машина произвела " + bottlesProduced + " штук бутылок.");
+
+
+        bottlesProduced = bottlesPerMinute * minutesPerDay * 3;
+        System.out.println("За 3 суток машина произвела " + bottlesProduced + " штук бутылок.");
+
+
+        bottlesProduced = bottlesPerMinute * minutesPerDay * 30;
+        System.out.println("За 1 месяц машина произвела " + bottlesProduced + " штук бутылок.");
+
+
+        System.out.println();
+        System.out.println();
+
+
+        // Task 5
+
+        taskN += 1;
+
+        System.out.println("Task " + taskN + ".");
+        System.out.println("=======");
+        System.out.println();
+
+        short numberOfClassrooms;
+        short whitePaintCans;
+        short brownPaintCans;
+        byte numberOfPaintCans = 120;
+        short whitePaintCansPerClassroom = 2;
+        short brownPaintCansPerClassroom = 4;
+
+        numberOfClassrooms = (short) (numberOfPaintCans / (whitePaintCansPerClassroom + brownPaintCansPerClassroom));
+        whitePaintCans = (short) (numberOfClassrooms * whitePaintCansPerClassroom);
+        brownPaintCans = (short) ( numberOfClassrooms * brownPaintCansPerClassroom);
+
+        System.out.println("В школе, где " + numberOfClassrooms + " классов, нужно " + whitePaintCans + " банок белой краски и " + brownPaintCans + " банок коричневой краски.");
+
+        System.out.println();
+        System.out.println();
+
 
     }
 }
