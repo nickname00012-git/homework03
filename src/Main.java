@@ -88,7 +88,7 @@ public class Main {
         short pupils2;
         short pupils3;
         short allPaperSheets;
-        float paperSheetsPerPupil;
+        short paperSheetsPerPupil;
 
         // У Людмилы Павловны — 23 ученика , у Анны Сергеевны — 27 учеников, у Екатерины Андреевны — 30 учеников.
         pupils1 = 23;
@@ -96,7 +96,7 @@ public class Main {
         pupils3 = 30;
         allPaperSheets = 480;
 
-        paperSheetsPerPupil = allPaperSheets / (pupils1 + pupils2 + pupils3);
+        paperSheetsPerPupil = (short) (allPaperSheets / (pupils1 + pupils2 + pupils3));
 
         System.out.println("На каждого ученика рассчитано " + paperSheetsPerPupil + " листов бумаги.");
 
@@ -119,7 +119,7 @@ public class Main {
         bottlesProduced = bottlesPerMinute * 20;
         System.out.println("За 20 минут машина произвела " + bottlesProduced + " штук бутылок.");
 
-        bottlesProduced = bottlesPerMinute * minutesPerDay * 1;
+        bottlesProduced = bottlesPerMinute * minutesPerDay;
         System.out.println("За 1 сутки машина произвела " + bottlesProduced + " штук бутылок.");
 
 
