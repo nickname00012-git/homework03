@@ -3,7 +3,7 @@ public class Main {
 
         // Heading
         int taskN;
-        taskN = 1;
+        taskN = 0;
 
         System.out.println();
         System.out.println();
@@ -12,6 +12,7 @@ public class Main {
 
         // Task 1
 
+        taskN += 1;
         System.out.println("Task " + taskN + ".");
         System.out.println("=======");
         System.out.println("dog:    " );
@@ -19,7 +20,7 @@ public class Main {
         System.out.println("paper:  " );
         System.out.println();
         System.out.println();
-        taskN += 1;
+
 
         // Task 2
 
