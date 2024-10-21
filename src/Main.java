@@ -202,7 +202,6 @@ public class Main {
         daysToMassLoss2 = (short) (massToLossInKg * 1000 / massToLossPerDay);
         System.out.println("Нужно дней для снижения веса на 7 кг (по " + massToLossPerDay + " гр в день):   " + daysToMassLoss2);
 
-        massToLossPerDay = (short) ((500 + 250) / 2);
         daysToMassLoss2 = (short) ((daysToMassLoss1 + daysToMassLoss2) / 2);
         System.out.println("В среднем нужнно дней для снижения веса на 7 кг:   " + daysToMassLoss2);
 
